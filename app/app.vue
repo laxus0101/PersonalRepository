@@ -24,10 +24,6 @@ import Footercomp from '~/components/footercomp.vue';
 const toggleDarkmode = () => {
   document.documentElement.classList.toggle('dark');
 };
-
-onMounted(() => {
-  document.documentElement.classList.add('dark');
-});
 </script>
 <style scoped>
 div{

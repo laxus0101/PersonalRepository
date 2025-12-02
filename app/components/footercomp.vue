@@ -23,7 +23,7 @@
           <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow me</h2>
           <ul class="text-gray-500 dark:text-gray-400 font-medium">
             <li class="mb-4">
-              <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Github</a>
+              <a href="https://github.com/laxus0101" class="hover:underline ">Github</a>
             </li>
           </ul>
         </div>
