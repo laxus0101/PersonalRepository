@@ -1,4 +1,5 @@
 module.exports = {
+    darkMode:'class',
     content: [
         "./app/components/**/*.{js,vue,ts}",
         "./app/pages/**/*.{js,vue,ts}",
