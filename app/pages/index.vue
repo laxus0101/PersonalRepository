@@ -24,12 +24,10 @@
         </p>
       </div>
     </div>
-    <div class="flex flex-wrap justify-center mx-auto max-w-7xl px-6 lg:px-8 mb-8 border border-red-500">
-      <Defcard />
-      <Defcard />
-      <Defcard />
+    <div class="flex flex-wrap justify-center mx-auto max-w-7xl px-6 lg:px-8 mb-8 border border-red-500 gap-2">
+      <Defcard v-for="tarjeta in contenidoTrajetas" :titulo=tarjeta.titulo :descripcion=tarjeta.descripcion />
     </div>
-    <div class="flex flex-wrap justify-center mx-auto max-w-7xl px-6 lg:px-8 border border-red-500">
+    <div class="flex flex-wrap justify-center mx-auto max-w-7xl px-6 lg:px-8 mb-8 border border-red-500">
 
     </div>
   </div>
@@ -37,7 +35,20 @@
 
 <script setup>
 import Defcard from '~/components/defcard.vue';
-
+const contenidoTrajetas = ref([
+  {
+    titulo: 'Tarjeta 1',
+    descripcion: 'Descripcion de la tarjeta 1'
+  },
+  {
+    titulo: 'Tarjeta 2',
+    descripcion: 'Descripcion de la tarjeta 2'
+  },
+  {
+    titulo: 'Tarjeta 3',
+    descripcion: 'Descripcion de la tarjeta 3'
+  }
+]);
 </script>
 
 <style>
