@@ -33,8 +33,8 @@
     <div class="flex flex-wrap gap-2 mx-auto max-w-7xl px-6 lg:px-8 mb-8">
       <Defcard class="grow" v-for="tarjeta in contenidoTrajetas" :titulo=tarjeta.titulo :descripcion=tarjeta.descripcion />
     </div>
-    <div class="flex flex-wrap justify-center mx-auto max-w-7xl px-6 lg:px-8 mb-8">
-
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 mb-8 border border-gray-300 back">
+      <Carousel/>
     </div>
   </div>
 </template>
@@ -43,16 +43,16 @@
 import Defcard from '~/components/defcard.vue';
 const contenidoTrajetas = ref([
   {
-    titulo: 'Amo mucho a mi novia',
-    descripcion: 'No sabes lo mucho que te amo mi amor, eres lo mejor que me ha pasado en la vida y quiero pasar el resto de mis dias a tu lado. Te amo con todo mi corazon y siempre lo hare.'
+    titulo: 'Tarjeta 1',
+    descripcion: 'Descripcion de la tarjeta 1Descripcion de la tarjeta 1Descripcion de la tarjeta 1Descripcion de la tarjeta 1Descripcion de la tarjeta 1'
   },
   {
-    titulo: '¿Por que mi novia es la mejor?',
-    descripcion: 'Mi novia es la mejor porque siempre me apoya en todo lo que hago, me hace reir cuando estoy triste y me motiva a ser una mejor persona. Ademas, es hermosa por dentro y por fuera, no hay momento del dia en el que no piense en ella.'
+    titulo: 'Tarjeta 2',
+    descripcion: 'Descripcion de la tarjeta 2Descripcion de la tarjeta 1Descripcion de la tarjeta 1Descripcion de la tarjeta 1Descripcion de la tarjeta 1Descripcion de la tarjeta 1'
   },
   {
-    titulo: 'Raones por las que deberias de ver Lord of the Rings conmigo',
-    descripcion: 'Lord of the Rings es una de las mejores sagas de peliculas jamas creadas. La historia es epica, los personajes son inolvidables y los efectos visuales son impresionantes. Ademas, la banda sonora es simplemente espectacular y te transporta a otro mundo. Verla conmigo seria una experiencia unica que nunca olvidaras.'
+    titulo: 'Tarjeta 3',
+    descripcion: 'Descripcion de la tarjeta 3Descripcion de la tarjeta 1Descripcion de la tarjeta 1Descripcion de la tarjeta 1Descripcion de la tarjeta 1Descripcion de la tarjeta 1'
   }
 ]);
 </script>
