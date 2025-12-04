@@ -30,10 +30,10 @@
         </p>
       </div>
     </div>
-    <div class="">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-6 lg:px-8 mb-8">
       <Defcard class="" v-for="tarjeta in contenidoTrajetas" :titulo=tarjeta.titulo :descripcion=tarjeta.descripcion />
     </div>
-    <div class="w-fit max-w-fit border border-gray-300">
+    <div class="mx-auto w-fit border border-gray-300">
       <Carousel/>
     </div>
   </div>

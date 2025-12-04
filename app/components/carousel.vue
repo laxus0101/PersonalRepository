@@ -1,20 +1,16 @@
 <template>
-  <div class="carousel">
-    <div class="carousel-group">
-      <div class="carousel-card font-bold text-gray-900 dark:text-white">CSS</div>
-      <div class="carousel-card font-bold text-gray-900 dark:text-white">TAILWIND</div>
-      <div class="carousel-card font-bold text-gray-900 dark:text-white">BOOTSTRAP</div>
-      <div class="carousel-card font-bold text-gray-900 dark:text-white">JAVASCRIPT</div>
-      <div class="carousel-card font-bold text-gray-900 dark:text-white">PYTHON</div>
-      <div class="carousel-card font-bold text-gray-900 dark:text-white">C#</div>
-      <div class="carousel-card font-bold text-gray-900 dark:text-white">NUXT</div>
-      <div class="carousel-card font-bold text-gray-900 dark:text-white">UX/UI</div>
-    </div>
+  <div>
+      <Vue3Marquee>
+          <h1 class="text-gray-900 dark:text-white"
+              v-for="(word, index) in helloArray"
+              :key="index">
+              {{ word }}
+          </h1>
+      </Vue3Marquee>
   </div>
 </template>
 
 <script setup>
+import { Vue3Marquee } from 'vue3-marquee'
+const helloArray = ['JavaScript ', 'Pyhton ', 'C# ', 'Nuxt ', 'Tailwind ','Bootstrap ', 'React ','HTML ','CSS ']
 </script>
-<style>
-
-</style>
