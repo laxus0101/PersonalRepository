@@ -5,6 +5,8 @@
 .nitro
 .cache
 dist
+192.168.100.2
+192.168.137.1
 
 # Node dependencies
 node_modules

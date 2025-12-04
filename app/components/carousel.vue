@@ -16,26 +16,5 @@
 <script setup>
 </script>
 <style>
-.carousel{
-  display: flex;
-  border: 5px solid red;
-  overflow-x: auto;
-}
 
-/* .carousel-group{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1em;
-} */
-
-/* .carousel-card{
-  flex: 0 0 5em;
-  height: 5em;
-  padding: 1em;
-  background-color: rgb(68, 72, 70);
-  font-size: 1rem;
-  text-align: center;
-  align-content: center;
-} */
 </style>
