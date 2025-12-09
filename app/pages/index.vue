@@ -1,7 +1,7 @@
 <template>
-  <div id="mainbody" class="py-4 mx-auto max-w-7xl">
-    <div class="px-6 lg:px-8 mb-8">
-      <div class="px-1 sm:px-10 lg:mx-0 grid grid-cols-2 grid-rows-2 gap-0 items center">
+  <div id="mainbody" class="py-4 mx-auto w-screen overflow-x-hidden">
+    <div class="px-6 lg:px-8 mb-8 max-w-7xl mx-auto flex flex-col">
+      <div class="px-1 sm:px-10 lg:mx-0 grid grid-cols-2 grid-rows-2 gap-0 items-center">
         <h2
           class="self-center text-3xl sm:text-5xl md:text-6xl text-dark dark:text-white font-semibold tracking-tight">
           Emmanuel Gaona</h2>
@@ -21,7 +21,7 @@
           </div>
         </div>
       </div>
-      <div class="mt-10 max-w-7xl lg:mx-0 lg:max-w-none mb-5">
+      <div class="mt-10 max-w-7xl lg:mx-0 mb-5 border border-blue-900">
         <p class="mb-3 text-gray-600 dark:text-gray-200 text-xl"> "Soy un desarrollador web especializado en frontend
           con
           experiencia en <strong class="font-bold text-gray-900 dark:text-white"> Nuxt</strong>, y actualmente
@@ -30,11 +30,11 @@
         </p>
       </div>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-6 lg:px-8 mb-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-6 lg:px-8 mb-8 max-w-7xl mx-auto">
       <Defcard class="" v-for="tarjeta in contenidoTrajetas" :titulo=tarjeta.titulo :descripcion=tarjeta.descripcion />
     </div>
 
-    <Carousel class=" overflow-hidden mx-auto"/>
+    <Carousel class="mx-auto max-w-7xl"/>
 
   </div>
 </template>
