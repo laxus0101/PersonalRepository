@@ -21,7 +21,7 @@
           </div>
         </div>
       </div>
-      <div class="mt-10 max-w-7xl lg:mx-0 mb-5 border border-blue-900">
+      <div class="mt-10 max-w-7xl lg:mx-0 mb-5">
         <p class="mb-3 text-gray-600 dark:text-gray-200 text-xl"> "Soy un desarrollador web especializado en frontend
           con
           experiencia en <strong class="font-bold text-gray-900 dark:text-white"> Nuxt</strong>, y actualmente
