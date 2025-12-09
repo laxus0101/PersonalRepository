@@ -1,5 +1,5 @@
 <template>
-  <div id="mainbody" class="py-4 mx-auto max-w-7xl border border-red-900">
+  <div id="mainbody" class="py-4 mx-auto max-w-7xl">
     <div class="px-6 lg:px-8 mb-8">
       <div class="px-1 sm:px-10 lg:mx-0 grid grid-cols-2 grid-rows-2 gap-0 items center">
         <h2
@@ -33,9 +33,9 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-6 lg:px-8 mb-8">
       <Defcard class="" v-for="tarjeta in contenidoTrajetas" :titulo=tarjeta.titulo :descripcion=tarjeta.descripcion />
     </div>
-    <div class="mx-auto w-fit border border-gray-300">
-      <Carousel/>
-    </div>
+
+    <Carousel class=" overflow-hidden mx-auto"/>
+
   </div>
 </template>
 

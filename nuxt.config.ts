@@ -10,7 +10,4 @@ export default defineNuxtConfig({
       }
     }
   },
-/*   build: {
-    transpile: ['vue3-marquee']
-  } */
 })
