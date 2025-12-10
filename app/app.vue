@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-rows-[auto 1fr auto] min-h-screen bg-cyan-100 dark:bg-gray-800">
+  <div class="grid grid-rows-[auto 1fr auto] min-h-screen bg-cyan-100 dark:bg-gray-800 overflow-x-hidden">
     <header class="flex justify-end content-center pe-14 py-1 fixed w-full top-0 bg-cyan-200 dark:bg-gray-700 z-10">
       <button @click.prevent="toggleDarkmode()" id="theme-toggle" data-tooltip-target="tooltip-toggle" type="button" class="text-gray-500 inline-flex items-center justify-center dark:text-gray-400 w-10 h-10 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 border border-gray-300 dark:border-gray-600">
         <svg id="theme-toggle-dark-icon" class="hidden w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
