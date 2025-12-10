@@ -34,9 +34,9 @@
       <Defcard class="" v-for="tarjeta in contenidoTrajetas" :titulo=tarjeta.titulo :descripcion=tarjeta.descripcion />
     </div>
 
-    <div class="px-6 block mx-auto max-w-7xl ">
+    <div class="px-6 block mx-0 md:mx-auto max-w-7xl ">
       <p class="dark:text-white text-gray-900 text-xl font-bold text-center mb-4">Mis herramientas</p>
-      <Carousel class="mx-auto"/>
+      <Carousel class="md:mx-auto mx-0"/>
     </div>
 
   </div>

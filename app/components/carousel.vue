@@ -1,13 +1,13 @@
 <template>
-    <div class="w-[70%] py-1">
+    <div class="w-full md:w-[70%] py-1">
         <Marquee
             class="gap-[1rem]"
             :reverse="true"
             :fade="true"
-            :duration="20"
             >
-            <div v-for="(card, index) in content" :key="index" class="flex flex-col items-center bg-neutral-primary-soft px-4 my-1 border border-default rounded-base md:max-w-xl dark:border-gray-700 dark:bg-gray-800 mx-4 shadow-2xl shadow-gray-400/10">
-                <img :src=card.img alt="python logo" class="w-6 h-6 md:w-8 md:h-8 mt-2"/>
+            <div v-for="(card, index) in content" :key="index"
+            class="flex flex-col items-center dark:bg-stone-800/10 bg-blue-400/10 px-4 my-1 border border-default rounded-base md:max-w-xl dark:border-gray-700 mx-4 dark:shadow-4xl dark:shadow-gray-400/10 shadow-4xl shadow-cyan-900/10">
+                <img :src=card.img alt="" class="w-6 h-6 md:w-8 md:h-8 mt-2"/>
                 <div class="flex flex-col justify-between px-4 py-1 leading-normal">
                     <h5 class="text-md font-bold tracking-tight text-heading dark:text-white">{{ card.text }}</h5>
                     <div>
