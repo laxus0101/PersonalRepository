@@ -10,4 +10,7 @@ export default defineNuxtConfig({
       }
     }
   },
+  css:[
+    'aos/dist/aos.css'
+  ]
 })

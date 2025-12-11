@@ -20,6 +20,14 @@
   </div>
 </template>
 <script setup>
+useHead({
+  title: 'Frontend developer - Emmanuel Gaona',
+  meta: [
+    { name: 'description', content: 'Portafolio de Emmanuel Gaona, desarrollador web frontend especializado en Nuxt y React.' },
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+    { charset: 'utf-8' },
+  ],
+});
 import Footercomp from '~/components/footercomp.vue';
 const toggleDarkmode = () => {
   document.documentElement.classList.toggle('dark');
