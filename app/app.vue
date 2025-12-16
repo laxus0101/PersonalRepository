@@ -1,7 +1,7 @@
 <template>
   <div class="">
-    <div class="grid grid-rows-[auto 1fr auto] min-h-screen bg-cyan-100 dark:bg-gray-800 overflow-x-hidden">
-      <header>
+    <div class="grid grid-rows-[auto,1fr,auto] min-h-screen bg-cyan-100 dark:bg-gray-800 overflow-x-hidden">
+      <header class="5">
         <Headercomp/>
       </header>
       <main>

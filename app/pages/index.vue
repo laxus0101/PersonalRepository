@@ -1,5 +1,5 @@
 <template>
-  <div id="mainbody" class="py-4 w-screen mt-7 overflow-x-hidden">
+  <div id="mainbody" class="py-12 w-screen overflow-x-hidden">
     <div class="px-6 lg:px-8 mb-8 max-w-7xl mx-auto flex flex-col ">
       <div class="px-1 sm:px-10 lg:mx-0 grid grid-cols-2 grid-rows-2 gap-0">
         <h2
@@ -10,16 +10,20 @@
           data-aos-delay="800"
           class="self-center text-3xl sm:text-5xl md:text-6xl text-dark dark:text-white font-semibold tracking-tight">
           Emmanuel Gaona</h2>
-        <p
+        <div
           data-aos="fade"
           data-aos-duration="1500"
           data-aos-offset="0"
           data-aos-once="false"
           data-aos-delay="800"
-          class="mt-4 text-xl font-medium text-pretty text-gray-600 dark:text-gray-100 sm:text-xl/8 col-start-1 row-start-2">
-          Hola, soy Emmanuel 👋
-          <br>Desarrollador Web Frontend
-        </p>
+          class="col-start-1 row-start-2">
+          <p
+            class="mt-4 text-xl font-medium text-pretty text-gray-600 dark:text-gray-100 sm:text-xl/8">
+            Hola, soy Emmanuel 👋
+          </p>
+          <p id="writing-effect" class="mt-4 text-xl font-medium text-pretty text-gray-600 dark:text-gray-100 sm:text-xl/8" :style="contentValues">
+          </p>
+        </div>
         <div
           data-aos="flip-right"
           data-aos-duration="1500"
@@ -59,10 +63,13 @@
       <Defcard class="" v-for="tarjeta in contenidoTrajetas" :titulo=tarjeta.titulo :descripcion=tarjeta.descripcion />
     </div>
 
-    <div data-aos="fade-right" data-aos-duration="2000" class="px-6 block mx-0 md:mx-auto max-w-7xl ">
+    <section data-aos="fade-right" data-aos-duration="2000" class="px-6 block mx-0 md:mx-auto max-w-7xl ">
       <p class="dark:text-white text-gray-900 text-xl font-bold text-center mb-4">Mis herramientas</p>
       <Carousel class="md:mx-auto mx-0"/>
-    </div>
+    </section>
+    <section>
+
+    </section>
 
   </div>
 </template>
@@ -83,8 +90,68 @@ const contenidoTrajetas = ref([
     descripcion: "Conocimientos en Node.js, Express.js, bases de datos SQL, consumo de API's REST y GraphQl ."
   }
 ]);
+
+const contentValues = {
+  '--var1': '"Desarrollador Web Frontend"',
+  '--var2': '"Esta es la segunda frase"',
+  '--var3': '"Esta es la tercera frase"',
+}
 </script>
 
 <style>
+#writing-effect{
+  display: inline-block;
+}
+
+#writing-effect::after{
+  content: '';
+  display: inline-block;
+  animation: typing 12s ease infinite;
+  animation-delay: 2s;
+  overflow: hidden;
+  width: 0;
+  white-space: nowrap;
+}
+
+
+@keyframes typing {
+  /* Paso 1 y 4 */
+  /* Inicia/vuelve a width 0 para que no se vea */
+  0%,33% {
+    width: 0;
+    content: var(--var1);
+  }
+  /* Paso 2 */
+  /* Se extiende el width */
+  15%{
+    width: 100%;
+  }
+  /* Paso 3 */
+  /* Se deja un tiempo para que se lea*/
+  24%{
+    width: 100%;
+  }
+  33.1%,60% {
+    width: 0;
+    content: var(--var2);
+  }
+  41.1%{
+    width: 100%;
+  }
+  50%{
+    width: 100%;
+  }
+  60.1%,100% {
+    width: 0;
+    content: var(--var3);
+  }
+  75.1%{
+    width: 100%;
+  }
+  85%{
+    width: 100%;
+  }
+
+}
 
 </style>
