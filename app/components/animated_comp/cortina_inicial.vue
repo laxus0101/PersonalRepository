@@ -30,7 +30,7 @@ function AnimationHandler(){
   setTimeout(() => {
     showOverlay.value = false
     document.body.style.overflow = ''
-  }, (cant_spans.value * delay_per_span.value) + animation_duration.value )
+  }, cant_spans.value * delay_per_span.value)
 }
 
 onMounted(() => {
