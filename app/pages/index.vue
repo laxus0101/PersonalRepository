@@ -1,58 +1,60 @@
 <template>
   <div id="mainbody" class="py-10 sm:py-12 w-screen overflow-x-hidden">
-    <div class="px-6 lg:px-8 mb-8 max-w-7xl mx-auto flex flex-col ">
-      <div class="px-1 sm:px-10 lg:mx-0 grid grid-cols-2 grid-rows-2 gap-0">
-        <h2
-          data-aos="zoom-in-down"
-          data-aos-duration="1500"
-          data-aos-offset="0"
-          data-aos-once="false"
-          data-aos-delay="800"
-          class="self-center text-2xl sm:text-5xl md:text-6xl text-dark dark:text-white font-semibold tracking-tight">
-          Emmanuel Gaona</h2>
-        <div
-          data-aos="fade"
-          data-aos-duration="1500"
-          data-aos-offset="0"
-          data-aos-once="false"
-          data-aos-delay="800"
-          class="col-start-1 row-start-2">
-          <p
-            class="mt-4 text-xl font-medium text-pretty text-gray-600 dark:text-gray-100 sm:text-xl/8">
-            Hola, soy Emmanuel 👋
-          </p>
-          <p id="writing-effect" class="mt-16 sm:mt-4 font-medium text-pretty dark:text-gray-100 text-xl after:whitespace-nowrap" :style="contentValues">
-          </p>
-        </div>
-        <div
-          data-aos="flip-right"
-          data-aos-duration="1500"
-          data-aos-once="false"
-          data-aos-offset="0"
-          data-aos-delay="800"
-          id="ContenedorImagen" class="flex justify-center items-center row-span-2 col-start-2 row-start-1 sm:mt-2">
-          <div id="ImgPerfil" class="w-[250px] h-[250px] sm:w-[400px] sm:h-[400px] rounded-full" style="
-              background-image: url('/img/profilepic.jpg');
-              background-size: cover;
-              background-position: center;">
+    <section class="paralax?">
+      <div class="px-6 lg:px-8 mb-8 max-w-7xl mx-auto flex flex-col ">
+        <div class="px-1 sm:px-10 lg:mx-0 grid grid-cols-2 grid-rows-2 gap-0">
+          <h2
+            data-aos="zoom-in-down"
+            data-aos-duration="1500"
+            data-aos-offset="0"
+            data-aos-once="false"
+            data-aos-delay="800"
+            class="self-center text-2xl sm:text-5xl md:text-6xl text-dark dark:text-white font-semibold tracking-tight">
+            Emmanuel Gaona</h2>
+          <div
+            data-aos="fade"
+            data-aos-duration="1500"
+            data-aos-offset="0"
+            data-aos-once="false"
+            data-aos-delay="800"
+            class="col-start-1 row-start-2">
+            <p
+              class="mt-4 text-xl font-medium text-pretty text-gray-600 dark:text-gray-100 sm:text-xl/8">
+              Hola, soy Emmanuel 👋
+            </p>
+            <p id="writing-effect" class="mt-16 sm:mt-4 font-medium text-pretty dark:text-gray-100 text-xl after:whitespace-nowrap" :style="contentValues">
+            </p>
+          </div>
+          <div
+            data-aos="flip-right"
+            data-aos-duration="1500"
+            data-aos-once="false"
+            data-aos-offset="0"
+            data-aos-delay="800"
+            id="ContenedorImagen" class="flex justify-center items-center row-span-2 col-start-2 row-start-1 sm:mt-2">
+            <div id="ImgPerfil" class="w-[250px] h-[250px] sm:w-[400px] sm:h-[400px] rounded-full" style="
+                background-image: url('/img/profilepic.jpg');
+                background-size: cover;
+                background-position: center;">
+            </div>
           </div>
         </div>
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          data-aos-once="false"
+          data-aos-offset="100"
+          data-aos-delay="800"
+          class="mt-10 lg:mx-0 mb-5 ">
+          <p class="mb-3 text-gray-600 dark:text-gray-200 text-sm sm:text-xl"> "Soy un desarrollador web especializado en frontend
+            con
+            experiencia en <strong class="font-bold text-gray-900 dark:text-white"> Nuxt</strong>, y actualmente
+            aprendiendo <strong class="font-bold text-gray-900 dark:text-white"> React</strong>. Me apasiona crear
+            interfaces limpias y funcionales."
+          </p>
+        </div>
       </div>
-      <div
-        data-aos="fade-up"
-        data-aos-duration="1500"
-        data-aos-once="false"
-        data-aos-offset="100"
-        data-aos-delay="800"
-        class="mt-10 lg:mx-0 mb-5 ">
-        <p class="mb-3 text-gray-600 dark:text-gray-200 text-sm sm:text-xl"> "Soy un desarrollador web especializado en frontend
-          con
-          experiencia en <strong class="font-bold text-gray-900 dark:text-white"> Nuxt</strong>, y actualmente
-          aprendiendo <strong class="font-bold text-gray-900 dark:text-white"> React</strong>. Me apasiona crear
-          interfaces limpias y funcionales."
-        </p>
-      </div>
-    </div>
+    </section>
     <div
     data-aos="fade"
     data-aos-duration="1500"

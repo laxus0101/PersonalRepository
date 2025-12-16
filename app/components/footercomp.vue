@@ -2,10 +2,10 @@
   <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
     <div class="md:flex md:justify-between">
       <div class="mb-6 md:mb-0">
-        <a href="https://v3.flowbite.com/" class="flex items-center">
+        <span class="flex items-center">
           <img src="/favicon.ico" class="h-8 me-3" alt="" />
           <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Emmanuel Gaona</span>
-        </a>
+        </span>
       </div>
       <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
         <div>
@@ -19,6 +19,9 @@
             </li>
             <li>
               <NuxtLink to="https://github.com/selemondev/marquee" class="hover:underline">vue3-marquee</NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="https://github.com/michalsnik/aos/tree/v2?tab=readme-ov-file" class="hover:underline">AOS</NuxtLink>
             </li>
           </ul>
         </div>
@@ -45,8 +48,8 @@
     </div>
     <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
     <div class="sm:flex sm:items-center sm:justify-between">
-      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="#"
-          class="hover:underline">Emmanuel Gaona</a>.
+      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400 hover:underline cursor-pointer">© 2025
+          Emmanuel Gaona.
       </span>
       <div class="flex mt-4 sm:justify-center sm:mt-0">
         <!-- <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
@@ -99,12 +102,6 @@
 </template>
 
 <script setup>
-/* import { onMounted } from 'vue';
-import { initFlowbite } from 'flowbite'
-
-onMounted(() => {
-    initFlowbite();
-}) */
 </script>
 
 <style>
