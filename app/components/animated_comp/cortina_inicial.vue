@@ -1,6 +1,6 @@
 <template>
   <div v-if="showOverlay" class="flex flex-row top-0 z-20 w-full h-full fixed pointer-events-none">
-    <span v-for="i in cant_spans" :key="i" :class="['bg-gray-700  w-full transition-all ease-out mx-0',
+    <span v-for="i in cant_spans" :key="i" :class="['bg-[#2e2459]  w-full transition-all ease-out mx-0',
       startAnimation ? 'h-0' : 'h-full'
     ]"
     :style="{

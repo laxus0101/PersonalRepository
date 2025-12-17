@@ -2,9 +2,8 @@
   <div id="mainbody" class="py-2 sm:py-12 w-screen overflow-x-hidden overflow-y-auto">
     <section
     class="
-    box-border pb-10 dark:bg-[#2e2459] bg-[#FFFFFF] bg-fixed
-    dark:bg-[linear-gradient(120deg,rgba(46,36,89,1)9%,rgba(36,50,97,1)31%,rgba(27,57,87,1)50%,rgba(46,53,102,1)75%,rgba(13,19,56,1)92%)]
-    bg-[linear-gradient(120deg,rgba(255,255,255,1)0%,rgba(164,204,235,1)25%,rgba(135,232,230,1)50%,rgba(152,204,235,1)75%,rgba(255,255,255,1)100%)]"
+    pb-10
+    "
     >
       <div class="px-0 lg:px-8 mb-8 max-w-7xl mx-0 sm:mx-auto flex flex-col">
         <div class="px-2 sm:px-10 mx-0 sm:mx-10 grid grid-cols-2 grid-rows-2 gap-0 mt-5 ">
