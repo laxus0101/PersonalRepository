@@ -1,8 +1,13 @@
 <template>
-  <div id="mainbody" class="py-10 sm:py-12 w-screen overflow-x-hidden">
-    <section class="paralax?">
-      <div class="px-6 lg:px-8 mb-8 max-w-7xl mx-auto flex flex-col ">
-        <div class="px-1 sm:px-10 lg:mx-0 grid grid-cols-2 grid-rows-2 gap-0">
+  <div id="mainbody" class="py-2 sm:py-12 w-screen overflow-x-hidden overflow-y-auto">
+    <section
+    class="
+    box-border pb-10 dark:bg-[#2e2459] bg-[#FFFFFF] bg-fixed
+    dark:bg-[linear-gradient(120deg,rgba(46,36,89,1)9%,rgba(36,50,97,1)31%,rgba(27,57,87,1)50%,rgba(46,53,102,1)75%,rgba(13,19,56,1)92%);]
+    bg-[linear-gradient(120deg,rgba(255,255,255,1)0%,rgba(164,204,235,1)25%,rgba(135,232,230,1)50%,rgba(152,204,235,1)75%,rgba(255,255,255,1)100%);]"
+    >
+      <div class="px-0 lg:px-8 mb-8 max-w-7xl mx-0 sm:mx-auto flex flex-col">
+        <div class="px-2 sm:px-10 mx-0 sm:mx-10 grid grid-cols-2 grid-rows-2 gap-0 mt-5 ">
           <h2
             data-aos="zoom-in-down"
             data-aos-duration="1500"
@@ -17,12 +22,12 @@
             data-aos-offset="0"
             data-aos-once="false"
             data-aos-delay="800"
-            class="col-start-1 row-start-2">
+            class="col-start-1 row-start-2 ">
             <p
-              class="mt-4 text-xl font-medium text-pretty text-gray-600 dark:text-gray-100 sm:text-xl/8">
+              class="mt-4 sm:mt-10 text-xl font-medium text-pretty text-gray-600 dark:text-gray-100 sm:text-xl/8">
               Hola, soy Emmanuel 👋
             </p>
-            <p id="writing-effect" class="mt-16 sm:mt-4 font-medium text-pretty dark:text-gray-100 text-xl after:whitespace-nowrap" :style="contentValues">
+            <p id="writing-effect" class="mt-32 sm:mt-10 font-medium text-pretty dark:text-gray-100 text-xl after:whitespace-nowrap" :style="contentValues">
             </p>
           </div>
           <div
@@ -32,8 +37,8 @@
             data-aos-offset="0"
             data-aos-delay="800"
             id="ContenedorImagen" class="flex justify-center items-center row-span-2 col-start-2 row-start-1 sm:mt-2">
-            <div id="ImgPerfil" class="w-[250px] h-[250px] sm:w-[400px] sm:h-[400px] rounded-full" style="
-                background-image: url('/img/profilepic.jpg');
+            <div id="ImgPerfil" class="w-[250px] h-[350px] sm:w-[300px] sm:h-[400px] rounded-full" style="
+                background-image: url(/img/profilepic.png);
                 background-size: cover;
                 background-position: center;">
             </div>
@@ -43,10 +48,10 @@
           data-aos="fade-up"
           data-aos-duration="1500"
           data-aos-once="false"
-          data-aos-offset="100"
+          data-aos-offset="-80"
           data-aos-delay="800"
-          class="mt-10 lg:mx-0 mb-5 ">
-          <p class="mb-3 text-gray-600 dark:text-gray-200 text-sm sm:text-xl"> "Soy un desarrollador web especializado en frontend
+          class="mt-16 mx-1 lg:mx-0 mb-5 ">
+          <p class="mb-3 text-gray-600 dark:text-gray-200 text-md sm:text-2xl"> "Soy un desarrollador web especializado en frontend
             con
             experiencia en <strong class="font-bold text-gray-900 dark:text-white"> Nuxt</strong>, y actualmente
             aprendiendo <strong class="font-bold text-gray-900 dark:text-white"> React</strong>. Me apasiona crear
@@ -55,24 +60,22 @@
         </div>
       </div>
     </section>
-    <div
-    data-aos="fade"
-    data-aos-duration="1500"
-    data-aos-once="false"
-    data-aos-offset="0"
-    data-aos-delay="800"
-    class="grid grid-cols-1 md:grid-cols-3 gap-6 px-6 lg:px-8 mb-8 max-w-7xl mx-auto ">
-      <Defcard class="" v-for="tarjeta in contenidoTrajetas" :titulo=tarjeta.titulo :descripcion=tarjeta.descripcion />
-    </div>
-
-    <section data-aos="fade-right" data-aos-duration="2000" class="px-6 block mx-0 md:mx-auto max-w-7xl ">
-      <p class="dark:text-white text-gray-900 text-xl font-bold text-center mb-4">Mis herramientas</p>
-      <Carousel class="md:mx-auto mx-0"/>
+    <section class="box-border">
+      <div
+      data-aos="fade"
+      data-aos-duration="1500"
+      data-aos-once="false"
+      data-aos-offset="0"
+      class="grid grid-cols-1 md:grid-cols-3 gap-6 px-6 lg:px-8 mb-8 max-w-7xl mx-auto py-10">
+        <Defcard class="" v-for="tarjeta in contenidoTrajetas" :titulo=tarjeta.titulo :descripcion=tarjeta.descripcion />
+      </div>
     </section>
-    <section>
-
+    <section class="box-border">
+      <div data-aos="fade-right" data-aos-duration="2000" class="px-6 block mx-0 md:mx-auto max-w-7xl py-10">
+        <p class="dark:text-white text-gray-900 text-xl font-bold text-center mb-4">Mis herramientas</p>
+        <Carousel class="md:mx-auto mx-0"/>
+      </div>
     </section>
-
   </div>
 </template>
 
@@ -112,9 +115,16 @@ const contentValues = {
   animation-delay: 2s;
   overflow: hidden;
   width: 0;
-  /* white-space: nowrap; */
 }
 
+/* .noparallax{
+  z-index: 999;
+}
+
+.parallaxhero{
+  transform-style: preserve-3d;
+  position: relative;
+} */
 
 @keyframes typing {
   /* Paso 1 y 4 */
