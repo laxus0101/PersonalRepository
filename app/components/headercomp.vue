@@ -1,7 +1,7 @@
 <template>
   <div class="flex justify-end content-center pe-14 py-1.5 fixed w-full top-0
   bg-cyan-200 dark:bg-[#31488c] z-10
-  dark:bg-[background: linear-gradient(70deg,rgba(49,72,140,1)0%,rgba(23,50,110,1)25%,rgba(59,77,112,1)54%,rgba(35,61,117,1)81%,rgba(26,29,71,1)100%);]
+  dark:bg-[background: linear-gradient(70deg,rgba(49,72,140,1)0%,rgba(23,50,110,1)25%,rgba(59,77,112,1)54%,rgba(35,61,117,1)81%,rgba(26,29,71,1)100%)]
   ">
     <button @click.prevent="toggleDarkmode()" type="button"
       class="text-gray-500 inline-flex items-center justify-center dark:text-gray-400 w-7 h-7 focus:outline-none rounded-lg text-sm border border-gray-400 dark:border-gray-600 dark:shadow-gray-900/30 shadow-lg shadow-gray-900/20">

@@ -2,8 +2,8 @@
   <div class="">
     <div class="grid grid-rows-[auto,1fr,auto] min-h-screen overflow-x-hidden
     dark:bg-[#2e2459] bg-[#FFFFFF]
-    dark:bg-[linear-gradient(120deg,rgba(46,36,89,1)9%,rgba(36,50,97,1)31%,rgba(27,57,87,1)50%,rgba(46,53,102,1)75%,rgba(13,19,56,1)92%);]
-    bg-[linear-gradient(120deg,rgba(255,255,255,1)0%,rgba(164,204,235,1)25%,rgba(135,232,230,1)50%,rgba(152,204,235,1)75%,rgba(255,255,255,1)100%);]
+    dark:bg-[linear-gradient(120deg,rgba(46,36,89,1)9%,rgba(36,50,97,1)31%,rgba(27,57,87,1)50%,rgba(46,53,102,1)75%,rgba(13,19,56,1)92%)]
+    bg-[linear-gradient(120deg,rgba(255,255,255,1)0%,rgba(164,204,235,1)25%,rgba(135,232,230,1)50%,rgba(152,204,235,1)75%,rgba(255,255,255,1)100%)]
     ">
       <header>
         <Headercomp/>
