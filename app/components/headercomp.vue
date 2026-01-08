@@ -1,9 +1,9 @@
 <template>
-  <div class="flex justify-end content-center pe-14 py-1.5 fixed w-full top-0
-  bg-cyan-200 dark:bg-[#2e2459] z-10 border-b-2 border-indigo-500/40
+  <div class="flex justify-end content-center sm:pe-14 pe-4 py-1.5 fixed w-full top-0
+  bg-cyan-200 dark:bg-[#2e2459] z-10 border-b-2 border-indigo-500/20
   ">
     <button @click.prevent="toggleDarkmode()" type="button"
-      class="text-gray-500 inline-flex items-center justify-center dark:text-gray-400 w-7 h-7 focus:outline-none rounded-lg text-sm border border-gray-400 dark:border-gray-600 dark:shadow-gray-900/30 shadow-lg shadow-gray-900/20">
+      class="text-gray-500 inline-flex items-center justify-center dark:text-gray-400 w-7 h-7 focus:outline-none rounded-lg text-sm border border-gray-200/10 dark:border-gray-700 dark:shadow-gray-900/20 shadow-lg shadow-gray-900/20">
       <svg class="block dark:hidden w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
         fill="currentColor" viewBox="0 0 18 20">
         <path
