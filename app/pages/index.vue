@@ -1,12 +1,8 @@
 <template>
   <div id="mainbody" class="py-2 sm:py-12 w-screen overflow-x-hidden overflow-y-auto">
-    <section
-    class="
-    pb-10
-    "
-    >
-      <div class="px-0 lg:px-8 mb-8 max-w-7xl mx-0 sm:mx-auto flex flex-col">
-        <div class="px-2 sm:px-10 mx-0 sm:mx-10 grid grid-cols-2 grid-rows-2 gap-0 mt-5 ">
+    <section id="" class="pb-10">
+      <div class="px-5 lg:px-8 mb-8 max-w-7xl mx-0 sm:mx-auto flex flex-col">
+        <div class="px-0 sm:px-10 mx-0 sm:mx-10 grid grid-cols-2 grid-rows-2 gap-0 mt-5">
           <h2
             data-aos="zoom-in-down"
             data-aos-duration="1500"
@@ -59,7 +55,7 @@
         </div>
       </div>
     </section>
-    <section class="box-border">
+    <section id="skill-cards" class="box-border">
       <div
       data-aos="fade"
       data-aos-duration="1500"
@@ -69,12 +65,20 @@
         <Defcard class="" v-for="tarjeta in contenidoTrajetas" :titulo=tarjeta.titulo :descripcion=tarjeta.descripcion />
       </div>
     </section>
-    <section class="box-border">
+    <section id="my-tools" class="box-border">
       <div data-aos="fade-right" data-aos-duration="2000" class="px-6 block mx-0 md:mx-auto max-w-7xl py-10">
         <p class="dark:text-white text-gray-900 text-xl font-bold text-center mb-4">Mis herramientas</p>
         <Carousel class="md:mx-auto mx-0"/>
       </div>
     </section>
+   <!--  <section id="resume">
+      <div class="max-w-3xl mx-auto bg-red-90 flex flex-row bg-red-900">
+        <img src="/img/enCV_Resume.jpg" alt="resume"
+          class="size-3/5 hover:size-full"
+          style="transition: all 1s ease-in-out;">
+        <p class="span-col-2 text-pretty font-bold dark:text-white text-gray-900 self-center mx-auto bg-red-400">este es un texto de prueba</p>
+      </div>
+    </section> -->
   </div>
 </template>
 
