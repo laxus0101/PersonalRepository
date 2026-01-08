@@ -7,13 +7,14 @@
             :speed="5000"
             >
             <div v-for="(card, index) in content" :key="index"
-            class="flex flex-col items-center dark:bg-stone-800/10 bg-blue-400/90 px-4 my-1 border border-default rounded-base md:max-w-xl dark:border-gray-700 mx-4 dark:shadow-4xl dark:shadow-gray-400/10 shadow-4xl shadow-cyan-900/10">
+            class="flex flex-col items-center  px-4 my-1 md:max-w-xl mx-4">
                 <img :src=card.img alt="" class="w-6 h-6 md:w-8 md:h-8 mt-2"/>
                 <div class="flex flex-col justify-between px-4 py-1 leading-normal">
                     <h5 class="text-md font-bold tracking-tight text-heading dark:text-white">{{ card.text }}</h5>
                     <div>
                     </div>
                 </div>
+                <!-- dark:bg-stone-800/10 bg-blue-300/50 border border-default rounded-base dark:border-gray-700 dark:shadow-4xl dark:shadow-gray-400/10 shadow-4xl shadow-cyan-900/10-->
             </div>
         </Marquee>
     </div>
